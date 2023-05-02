@@ -4,6 +4,7 @@
   
   .createTweet{
    margin-top:6rem;
+   width: 45rem;
   }
   .create_first {
     display: flex;

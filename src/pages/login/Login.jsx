@@ -55,7 +55,8 @@ export default function MyLogin() {
 
   const validUser = userDetails.find((user) => user.password === password);
   const activeUser = userDetails.find(
-    (user) => user.active.isActive === false && user.password === password
+    (user) =>user.active && user.active.isActive === false && user.password === password
+    
   );
   function handleLoginClick() {
     if (validUser) {

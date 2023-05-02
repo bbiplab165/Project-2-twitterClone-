@@ -1,0 +1,89 @@
+.registrationBackground {
+    background-color: #2C3333 !important;
+    height: 100vh;
+    width: 100wh;
+    margin: 0;
+    padding: 0;
+}
+
+.registration {
+    background-color: white;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45rem;
+    width: 40rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.logo {
+    width: 3rem;
+    margin-bottom: 0;
+    margin-top: -10rem;
+}
+.registration h2{
+    font-size: 2.5rem;
+    color: black;
+}
+
+.registration button img {
+    width: 1.8rem;
+    margin-right: 1rem;
+}
+
+
+.registration button {
+    background-color: black;
+    color: black;
+    width: 22rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .8rem 0;
+    border-radius: 5rem;
+    background: transparent;
+    border: 1px solid #999;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.registration h3{
+    color: black;
+    margin: 0;
+    padding:0 1rem;
+    font-size: 1rem;
+    margin-top: -1.2rem;
+    background-color: white;
+}
+.registration hr{
+    border-top: 1px solid rgb(216, 213, 213);
+    width: 22rem;
+    border-bottom: none;
+}
+
+.registration p {
+    /* text-align: left; */
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgb(78, 79, 81);
+    margin-top: 1rem;
+    margin-bottom: .6rem;
+    font-size: 1rem;
+    width: 30rem;
+    font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.registration span {
+    margin: .1rem;
+    color: #1D9Bf0;
+    font-size: 1rem;
+}

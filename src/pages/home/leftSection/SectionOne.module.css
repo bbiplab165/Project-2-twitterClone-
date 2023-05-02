@@ -38,6 +38,9 @@ a {
   background-color: #dfe1e3;
   border-radius: 50%;
 }
+.pimage{
+  padding-right: 1rem;
+}
 
 .sidebar button {
   background-color: rgb(26, 133, 220);
@@ -63,8 +66,8 @@ a {
   align-items: center;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
-  width: 15vw;
-  margin-top: 3rem;
+  width: 10rem;
+  margin-top: 10rem;
 }
 
 .username {

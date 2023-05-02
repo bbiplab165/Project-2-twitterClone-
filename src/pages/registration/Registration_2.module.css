@@ -1,0 +1,101 @@
+.Registration_2Background {
+    background-color: #2C3333 !important;
+    height: 100vh;
+    width: 100wh;
+    margin: 0;
+    padding: 0;
+}
+.Registration_2 {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 45rem;
+    width: 41.7rem;
+    border-radius: 1rem;
+    margin: 0;
+    padding: 0;
+    font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.Registration_2 form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 0;
+    width: 29rem;
+    height: 30rem;
+    padding-left: 6rem;
+}
+
+.Registration_2 h1 {
+    color: black;
+    font-size: 2.2rem;
+    margin-top: 0;
+    padding-left: 6rem;
+}
+
+.Registration_2 input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    padding: .8rem;
+    font-size: 1.2rem;
+    background-color: white;
+    color: black;
+    border: 2px solid #62CDFF;
+}
+
+.Registration_2 p {
+    color: rgb(108, 103, 103);
+}
+
+.Registration_2 select {
+    padding: 1rem 2.4rem;
+    background-color: white;
+    color: black;
+    font-size: .9rem;
+}
+
+.Registration_2 select option {
+    font-size: 1rem;
+}
+
+.middleSelect {
+    margin: 0 0.9rem;
+}
+
+.subButton {
+    padding: 1.4rem;
+    border-radius: 5rem;
+    color: white;
+    background-color: black;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.Registration_2 span {
+    color: blue;
+    margin-top: 1rem;
+    display: inline-block;
+    margin-left: auto;
+    transition: text-decoration 0.3s;
+}
+
+.Registration_2 span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.error {
+    color: red !important;
+}

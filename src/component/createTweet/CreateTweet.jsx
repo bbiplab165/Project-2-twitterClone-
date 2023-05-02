@@ -12,14 +12,31 @@ import Tooltip from "@mui/material/Tooltip";
 import UserFollowData from "../../component/UserFollowData";
 import { TextareaAutosize } from "@mui/material";
 
+import { constSelector, useRecoilValue, useSetRecoilState } from "recoil";
+import { tweetsAtom } from "../../pages/recoil/tweets"
+
 export default function CreateTweet() {
-  // const [isTweet, setIsTweet] = useState(true);
+  
+  const setTweets = useSetRecoilState(tweetsAtom);
+  const [tweet, setTweet] = useState('')
+    const handleInputChange = (e) => {
+        const text = e.target.value;
+        setTweet(text);
+        // // adjustTextareaHeight();
+        // // setWordCount(text.length);
+    };
+    function submitTweet() {
+        
+        
+    }
+  ////////////////
 
   const navigate = useNavigate();
   const inputref = useRef(null);
 
   const userDetails = JSON.parse(localStorage.getItem("userData")) || [];
-  const userName = userDetails.find((name) => name.active.isActive === true);
+  const userName = userDetails.find((user) => user.active && user.active.isActive === true)
+
 
   useEffect(() => {
     if (!userName) {
@@ -45,6 +62,7 @@ export default function CreateTweet() {
           <TextareaAutosize
             aria-label="minimum height"
             minRows={3}
+            onChange={handleInputChange}
             placeholder="What's happening?"
             className={style.textarea}
           />
@@ -109,6 +127,7 @@ export default function CreateTweet() {
                   textTransform: "capitalize",
                   backgroundColor: "rgb(29, 155, 240)",
                 }}
+                onClick={submitTweet}
               >
                 Tweet
               </Button>

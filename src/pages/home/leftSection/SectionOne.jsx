@@ -26,7 +26,8 @@ const SectionOne = () => {
 
   const navigate = useNavigate()
   const userDetails = JSON.parse(localStorage.getItem("userData")) || [];
-  const userName = userDetails.find((name) => name.active.isActive === true);
+  const userName = userDetails.find((user) => user.active && user.active.isActive === true)
+
   
   function handleLogout(){
     if(userName){

@@ -1,0 +1,139 @@
+.who_to_follow {
+  border: 1px solid #657786;
+  padding-left: 4rem;
+  padding: 12px;
+  border-radius: 8px;
+  height:20rem;
+  background-color: #fff;
+  width: 30rem;
+  margin: 14px;
+  position: fixed;
+  bottom: 0;
+  right: 1rem;
+    /* display: flex; */
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: fixed;
+}
+.who_to_follow.who_to_follow_show_more{
+  height:30rem,
+}
+
+.who_to_follow_heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.who_to_follow_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.who_to_follow_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.who_to_follow_avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.who_to_follow_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.who_to_follow_name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.who_to_follow_button {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+}
+
+.who-to-follow-button:hover {
+  background-color: #1da1f2;
+}
+
+.who_to_follow_icon {
+  margin-right: 8px;
+}
+
+.who_to_follow_show_more {
+  background-color: transparent;
+  border: none;
+  color: #1da1f2;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+
+  .who_to_follow {
+    width: auto;
+    margin: 8px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: relative;
+  }
+
+  .who_to_follow_heading {
+    font-size: 16px;
+  }
+
+  .who_to_follow_avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .who_to_follow_name {
+    font-size: 14px;
+  }
+
+  .who_to_follow_button {
+    font-size: 12px;
+    width: 100px;
+    height: 32px;
+  }
+  
+}
+
+/* iPad devices */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .who_to_follow {
+    width: auto;
+    margin: 12px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: relative;
+  }
+
+  .who_to_follow_button {
+    font-size: 14px;
+    width: 100px;
+    height: 32px;
+  }
+  
+}

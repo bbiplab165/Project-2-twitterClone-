@@ -14,16 +14,22 @@ import Popover from "@mui/material/Popover";
 import PopupState, { bindTrigger, bindPopover } from "material-ui-popup-state";
 import MoreHorizSharpIcon from "@mui/icons-material/MoreHorizSharp";
 import data from "../../data/userFake_DATA .json";
+import { useRecoilValue } from "recoil";
+import { tweetsAtom } from "../../pages/recoil/tweets";
+
 
 const UserPost = () => {
   function handleLike() {}
-  console.log(data);
   let like=100;
   let likesCount
+  //
+  const tweets = useRecoilValue(tweetsAtom);
+
 
   return (
     <>
       {data.map((user, index) => {
+      {/* {tweets.map((user, index) => { */}
         return (
           <div className={style.postss} key={user.id}>
             <div className={style.postss__first}>

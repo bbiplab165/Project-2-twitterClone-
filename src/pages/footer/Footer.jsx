@@ -8,7 +8,8 @@ const Footer = () => {
 
   function handleLogout(){
     const userDetails = JSON.parse(localStorage.getItem('userData')) || []
-  const userName = userDetails.find((name) => name.active.isActive === true)
+    const userName = userDetails.find((user) => user.active && user.active.isActive === true)
+    console.log(userName);
 
   if(userName){
     userName.active.isActive = false

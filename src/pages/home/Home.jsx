@@ -4,6 +4,9 @@ import CreateTweet from "../../component/createTweet/CreateTweet";
 import UserFollowData from "../../component/UserFollowData";
 import UserPost from "../../component/UserPost/UserPost";
 import SectionOne from "./leftSection/SectionOne";
+import Who from "./who/whotofollow"
+import Search from "./who/SearchBar"
+import WhatsHappeningPage from "./who/WhatsHappeningPage"
 
 const Home = () => {
   const [isTweet, setIsTweet] = useState(true);
@@ -29,6 +32,9 @@ const Home = () => {
         </div>
       </div>
       <CreateTweet />
+      <Search/>
+      <WhatsHappeningPage/>
+      <div className={style.rightsection}><Who /></div>
       {isTweet ? <UserPost /> : <UserFollowData />}
     </div>
   );

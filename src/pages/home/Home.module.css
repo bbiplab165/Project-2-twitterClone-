@@ -1,11 +1,13 @@
-
+.rightsection{
+    position:fixed,
+}
 .container_post{
     width: 45%;
     margin-left: 25%;
 }
 .post{
     width: 45%;
-    position: fixed;
+    position: absolute;
     top: 1.1rem;
     font-weight: 700;
 }
